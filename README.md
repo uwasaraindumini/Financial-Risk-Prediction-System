@@ -71,13 +71,6 @@ Deployed Application: Streamlit App
     Binuki Mihara
     Chathuni Abesinghe
 
-📂 **Repository Structure**
-    app.py: Streamlit application code.
-    model.pkl: Saved XGBoost model.
-    preprocessing.pkl: Encoders and scalers for preprocessing.
-    data/: Dataset files and preprocessing scripts.
-    notebooks/: Jupyter notebooks for model training and evaluation.
-
 📌 **Links**
     Deployed Application: Streamlit App
     Dataset: Kaggle - Financial Risk Dataset
