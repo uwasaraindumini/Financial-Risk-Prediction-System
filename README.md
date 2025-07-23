@@ -1,14 +1,77 @@
-# Financial_Risk_Prediction
-An attempt to build a machine learning model capable of predicting the rate of someone facing financial risk being low, medium or high based on their financial and social attributes.
-Check the application - https://financial-risk.streamlit.app/
+## Financial-Risk-Prediction-System
 
-Key features of the prediction system:
+📋 **Overview**
 
- • Data Cleaning & Preprocessing: Treated the missing values, check for outliers, took care of class imbalances, normalized and transformed data, and converted categorical variables into numeric format. 
+The Financial Risk Prediction System is a machine learning-powered application designed to classify individuals into financial risk categories (High, Medium, Low) based on their demographic, financial, and behavioral data. This project leverages advanced machine learning techniques to provide financial institutions with actionable insights, enabling better lending decisions and risk management.
 
- • Feature Scaling and selection: Applied MaxAbsScaler to ensure that the numerical features were standardized for the models. Using Mutual Information (MI) scores, the most informative features were selected. 
+🚀 **Key Features**
 
- • Model Training and Evaluation: The models XGBoost, CatBoost, LightGBM, and RandomForest were taken into consideration. The scaled and resampled dataset was used to train each model. After training, models were assessed using confusion matrices, accuracy, and classification reports. For hyperparameter tuning used RandomizedSearchCV and GridSearchCV.
+1️⃣ **Data Cleaning & Preprocessing**
 
- • Model Saving and Deployment: Because of its high training accuracy and test accuracy following hyperparameter adjustment, XGBoost was chosen as the top-performing model. Finally, the app was deployed as a Streamlit application. 
+• Treated missing values using stratified median imputation.
 
+• Addressed class imbalance with ADASYN (Adaptive Synthetic Sampling).
+
+• Converted categorical data into numerical format using OrdinalEncoder and LabelEncoder.
+
+2️⃣ **Feature Scaling & Selection**
+
+• Scaled numerical features with MaxAbsScaler to standardize data.
+
+• Identified critical features using Mutual Information (MI) scores, optimizing the dataset for training.
+
+3️⃣ **Model Training & Evaluation**
+
+• Trained and evaluated XGBoost, CatBoost, LightGBM, and RandomForest models.
+
+• Fine-tuned hyperparameters using RandomizedSearchCV and GridSearchCV to enhance performance.
+
+• Selected XGBoost as the best-performing model for deployment.
+
+4️⃣ **Deployment**
+
+• Deployed the application with a Streamlit interface, providing real-time predictions.
+
+• Saved the trained model, encoders, and scalers as Pickle files for easy reuse.
+
+📊 **Project Workflow**
+
+• Data cleaning and preprocessing to prepare the dataset.
+
+• Feature engineering and selection for optimized training.
+
+• Model training, evaluation, and hyperparameter tuning.
+
+• Deployment of the final model with a user-friendly Streamlit interface.
+
+🔧 Tools & Technologies
+
+• Languages: Python
+
+• Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, XGBoost, CatBoost, LightGBM
+
+• Frameworks: Streamlit
+
+• Version Control: GitHub
+
+🎯 **Goals & Impact**
+
+This system empowers financial institutions to:
+
+    • Accurately predict financial risk, reducing defaults.
+    • Automate risk assessments for faster decision-making.
+    • Enhance transparency and trust through Explainable AI.
+    
+👥 **Team Members** 
+
+• Eshanie Rathnasinghe 
+• Thiyara Gunawardena 
+• Binuki Mihara 
+• Chathuni Abesinghe
+
+📌 **Links Deployed Application:** Streamlit App 
+    **Dataset:** Kaggle - Financial Risk Dataset
+
+🔗 License This project is licensed under the MIT License. See the LICENSE file for details.
+
+Feel free to explore, contribute, and share your thoughts! 😊
